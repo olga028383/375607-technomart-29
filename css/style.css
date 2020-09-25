@@ -114,6 +114,14 @@
 .page {
   font-family: var(--basic-font);
   font-weight: 400;
+  height: 100%
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page a {
@@ -439,22 +447,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: -10px;
-  margin-right: -10px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
+  gap: 20px;
 }
 
 .category-list__item {
-  width: 300px;
-  height: 123px;
   padding: 20px 23px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px;
 }
 
 .category-list__title {
@@ -504,10 +508,19 @@
 
 .category-list__item--sale {
   background-color: var(--color-green-white);
+  grid-column-start: 3;
+  grid-column-end: 3;
 }
 
 .category-list__item--delivery {
   background-color: var(--color-yellow);
+  grid-column-end: -1;
+  grid-row-end: -1;
+}
+
+.category-list__gallery {
+  grid-column: 1/2;
+  grid-row: 2/4;
 }
 
 .gallery {
@@ -711,6 +724,12 @@
   background-color: var(--basic-background);
 }
 
+.tabs {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 20px;
+}
+
 .tabs__content,
 .tabs__buttons {
   list-style: none;
@@ -765,7 +784,9 @@
 }
 
 .company-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 20px;
 }
 
 .company__list {
@@ -1054,6 +1075,10 @@
 .social__link:hover,
 .social__link:active {
   background-color: var(--basic-red);
+}
+
+.popup {
+  display: none
 }
 
 .popup-cart__text {

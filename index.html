@@ -82,38 +82,41 @@
               <p class="category-list__title">Доставка</p>
               <a href="blank.html" class="category-list__link">Бесплатно</a>
             </li>
+            <li class="category-list__gallery">
+              <section class="gallery">
+                <h2 class="visually-hidden">Фотогалерея</h2>
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <figure class="gallery__block">
+                      <div class="gallery__image">
+                        <img src="img/slider.jpg" width="620" height="266" alt="Изображение перфоратора">
+                      </div>
+                      <figcaption class="gallery__description">
+                        <p class="gallery__title">Перфораторы</p>
+                        <p class="gallery__text">Настоящие мужские игрушки</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li class="gallery__item">
+                    <figure class="gallery__block">
+                      <div class="gallery__image">
+                        <img src="img/slider2.jpg" width="620" height="266" alt="Изображение дрели">
+                      </div>
+                      <figcaption class="gallery__description">
+                        <p class="gallery__title">Дрели</p>
+                        <p class="gallery__text">Соседям на радость!</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                </ul>
+                <a href="catalog.html" class="button gallery__link">Открыть каталог</a>
+                <button type="button" disabled class="gallery__button gallery__button--prev">Назад</button>
+                <button type="button" class="gallery__button gallery__button--next">Вперед</button>
+              </section>
+            </li>
           </ul>
 
-          <section class="gallery">
-            <h2 class="visually-hidden">Фотогалерея</h2>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-                <figure class="gallery__block">
-                  <div class="gallery__image">
-                    <img src="img/slider.jpg" width="620" height="266" alt="Изображение перфоратора">
-                  </div>
-                  <figcaption class="gallery__description">
-                    <p class="gallery__title">Перфораторы</p>
-                    <p class="gallery__text">Настоящие мужские игрушки</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li class="gallery__item">
-                <figure class="gallery__block">
-                  <div class="gallery__image">
-                    <img src="img/slider2.jpg" width="620" height="266" alt="Изображение дрели">
-                  </div>
-                  <figcaption class="gallery__description">
-                    <p class="gallery__title">Дрели</p>
-                    <p class="gallery__text">Соседям на радость!</p>
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-            <a href="catalog.html" class="button gallery__link">Открыть каталог</a>
-            <button type="button" disabled class="gallery__button gallery__button--prev">Назад</button>
-            <button type="button" class="gallery__button gallery__button--next">Вперед</button>
-          </section>
+
         </section>
 
         <section>
@@ -351,7 +354,7 @@
       <form action="index.html" method="post" class="form">
         <label class="field">
           Имя Фамилия:
-          <input type="text" name="name" class="field__input" placeholder="Имя Фамилия" autofocus>
+          <input type="text" name="name" class="field__input" placeholder="Имя Фамилия">
         </label>
 
         <label class="field">
