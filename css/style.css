@@ -594,20 +594,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.products__item {
-  width: 220px;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px
 }
 
 .product-cart {
   padding: 6px 18px;
   border: 1px solid var(--basic-color-border);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .product-cart__image {
