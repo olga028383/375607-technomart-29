@@ -459,6 +459,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
 .category-list__title {
