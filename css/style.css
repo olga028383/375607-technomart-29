@@ -732,8 +732,9 @@
 
 .tabs {
   display: grid;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 240px 620px;
   column-gap: 20px;
+  justify-content: space-between;
 }
 
 .tabs__content,
@@ -767,7 +768,7 @@
 
 .tabs__button {
   font-family: var(--basic-font-additional);
-  width: 240px;
+  width: 100%;
   min-height: 61px;
   background-color: var(--basic-blue);
   font-size: 21px;
