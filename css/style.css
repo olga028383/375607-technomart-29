@@ -733,7 +733,6 @@
 .tabs {
   display: grid;
   grid-template-columns: 240px 620px;
-  column-gap: 20px;
   justify-content: space-between;
 }
 
