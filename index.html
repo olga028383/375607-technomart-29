@@ -11,7 +11,7 @@
     <header class="header">
       <div class="header__top">
         <div class="container header__top-container">
-          <a class="logo"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <a class="logo logo--header"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
           <form action="index.html" class="search">
             <input type="search" name="g" placeholder="Поиск" class="search__input">
             <button type="submit" class="search__icon">
@@ -266,9 +266,17 @@
                   поднимая его на ваш этаж!</p>
               </li>
             </ul>
-            <div class="tabs__images">
-              <img src="img/service-bg.png" height="261" width="468"/>
-            </div>
+            <ul class="tabs__images">
+              <li class="tabs__image tabs__image--active">
+                <img src="img/service-bg.png" height="261" width="468"/>
+              </li>
+              <li class="tabs__image">
+                <img src="img/guarantee.png" height="283" width="389"/>
+              </li>
+              <li class="tabs__image">
+                <img src="img/credit.png" height="285" width="465"/>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
