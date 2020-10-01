@@ -979,8 +979,6 @@
 
 .range-price {
   background-color: var(--backgroud-catalog-block);
-  display: flex;
-  justify-content: space-between;
 }
 
 .range-price__item {
@@ -990,6 +988,11 @@
   background-color: var(--basic-white);
 }
 
+.group-price {
+  display: flex;
+  justify-content: space-between;
+}
+
 .group-price__input {
   font-size: 17px;
   line-height: 18px;
@@ -997,7 +1000,8 @@
   color: var(--basic-black);
   background-color: var(--backgroud-catalog-block);
   border: none;
-  text-align: center
+  text-align: center;
+  width: 80px
 }
 
 .sort {
