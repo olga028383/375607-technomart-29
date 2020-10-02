@@ -335,9 +335,8 @@
   grid-template-columns: 3fr 1fr 4fr 4fr;
   grid-template-areas: 'name . info auth';
   column-gap: 20px;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 46px;
+  padding-bottom: 40px;
   min-height: 158px;
   box-sizing: border-box;
 }
@@ -350,6 +349,7 @@
   line-height: 23px;
   grid-area: name;
   width: calc(100% + 20px);
+  margin: 0
 }
 
 .company-info {
@@ -398,7 +398,6 @@
 
 .auth {
   display: flex;
-  align-items: center;
   grid-area: auth;
 }
 
