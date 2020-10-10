@@ -1395,6 +1395,10 @@ button.button {
   height: 23px;
   background-image: url('../img/svg/checkbox-on.svg');
   background-repeat: no-repeat;
+  background-size: 27px;
+}
+.checkbox:checked + label:hover::after{
+  background-image: url('../img/svg/checkbox-on-hover.svg');
 }
 
 .radio + label::before {
