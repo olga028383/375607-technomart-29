@@ -1386,14 +1386,6 @@ button.button {
   border-color: transparent;
 }
 
-.checkbox:checked + label::before {
-  border-image: linear-gradient(
-    to bottom,
-    red,
-    rgba(0, 0, 0, 0)
-  ) 1 100%;
-}
-
 .checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -1401,7 +1393,7 @@ button.button {
   top: 0;
   width: 27px;
   height: 23px;
-  /*background-image: url('../img/svg/checkbox-on.svg');*/
+  background-image: url('../img/svg/checkbox-on.svg');
   background-repeat: no-repeat;
 }
 
