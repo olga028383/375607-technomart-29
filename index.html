@@ -426,41 +426,43 @@
 
     <section class="popup popup--form">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="index.html" method="post" class="form">
+      <form action="index.html" method="post" class="form" id="write-us">
+
         <label class="field">
-          Имя Фамилия:
+           <span class="field__text">Ваше имя:</span>
           <input type="text" name="name" class="field__input" placeholder="Имя Фамилия">
         </label>
 
         <label class="field">
-          Ваш e-mail:
+          <span class="field__text">Ваш e-mail:</span>
           <input type="email" name="email" class="field__input" placeholder="email@example.com">
         </label>
 
-        <label class="field">
-          Текст письма
+        <label class="field field--notification">
+           <span class="field__text">Текст письма</span>
           <textarea id="text" class="field__notification" name="" cols="5" rows="3"
                     placeholder="В сободной форме"></textarea>
         </label>
-
-        <button class="button form__button">Отправить</button>
       </form>
-      <button class="popup__close">х</button>
+      <p class="popup__buttons">
+        <button type="submit" class="button form__button" form="write-us">Отправить</button>
+      </p>
+      <button type="button" class="popup__close">закрыть</button>
     </section>
 
     <section class="popup popup--map">
       <h2 class="visually-hidden">Карта</h2>
       <img src="img/map.jpg" width="970" height="477" alt="Расположение компании на карте">
-      <button class="popup__close">х</button>
+      <button type="button" class="popup__close">Закрыть</button>
     </section>
 
-    <section class="popup popup-cart">
+    <section class="popup popup--cart">
       <h2 class="popup-cart__text">Товар добавлен в корзину!</h2>
-      <div class="popup-cart__buttons">
+      <div class="popup__buttons">
         <a href="blank.html" class="button">Оформить заказа</a>
         <a href="catalog.html" class="button button--back">Продолжить покупки</a>
       </div>
-      <button class="popup__close">х</button>
+      <button type="button" class="popup__close">Закрыть</button>
     </section>
 
   </body>
