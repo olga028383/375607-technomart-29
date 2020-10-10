@@ -24,23 +24,23 @@
           </form>
           <nav class="personal-buttons">
             <ul class="personal-buttons__list">
-              <li class="personal-buttons__item"><a href="#" class="personal-buttons__link-count">
+              <li class="personal-buttons__item personal-buttons__item--bookmarks"><a href="#" class="personal-buttons__link-count">
                 <svg width="14" height="16" class="personal-buttons__icon" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
                 </svg>
                 Закладки: 0
               </a></li>
-              <li class="personal-buttons__item">
+              <li class="personal-buttons__item personal-buttons__item--basket">
                 <a href="#" class="personal-buttons__link-count personal-buttons__link-count--active">
                   <svg width="15" height="15" class="personal-buttons__icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                     <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
                   </svg>
-                  Корзина: 0
+                  Корзина: 10
                 </a>
               </li>
-              <li class="personal-buttons__item"><a href="#" class="personal-buttons__link">Оформить заказ</a></li>
+              <li class="personal-buttons__item personal-buttons__item--order"><a href="#" class="personal-buttons__link">Оформить заказ</a></li>
             </ul>
           </nav>
         </div>
@@ -60,12 +60,9 @@
                 fill="#C5C5C5"/>
             </svg>
             Равшан Джамшутович
-            <svg width="20" class="user__icon" height="17" viewBox="0 0 20 17" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
-              <path
-                d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
-                fill="#C5C5C5"/>
+            <svg width="20" height="17" class="user__icon" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+              <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
             </svg>
           </a>
           <ul class="personal-menu">
@@ -88,7 +85,14 @@
     </header>
 
     <ul class="breadcrumbs container">
-      <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE"/>
+            <path d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z" fill="#C1C6CE"/>
+          </svg>
+        </a>
+      </li>
       <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a></li>
       <li class="breadcrumbs__item"><a href="blank.html" class="breadcrumbs__link">Инструмент</a></li>
       <li class="breadcrumbs__item"><span class="breadcrumbs__text">Перфораторы</span></li>
@@ -99,22 +103,22 @@
     <div class="container layout">
       <aside class="layout__left">
         <section class="filter">
-          <h2 class="filter__title">Фильтр товаров</h2>
+          <h2 class="filter__title">Фильтр:</h2>
           <form class="filer-form">
             <fieldset class="filer-form__field">
               <legend class="filer-form__title">Цена:</legend>
 
               <div class="range-price">
                 <div class="range-price__line">
-                  <div class="range-price__active-line"></div>
+                  <div class="range-price__active-line" style="width: 74%; margin-left: 8%"></div>
                 </div>
-                <div class="range-price__item range-price__item--min"></div>
-                <div class="range-price__item range-price__item--max"></div>
+                <div class="range-price__item range-price__item--min" tabindex="0" style="left: 8%"></div>
+                <div class="range-price__item range-price__item--max" tabindex="0" style="left: 74%"></div>
               </div>
 
               <label class="group-price">
-                <input type="text" class="group-price__input" value="0"> —
-                <input type="text" class="group-price__input" value="30000">
+                <input type="number" class="group-price__input" value="0">
+                <input type="number" class="group-price__input" value="30000">
               </label>
             </fieldset>
 
@@ -124,26 +128,26 @@
               <input class="visually-hidden checkbox" id="brands_1" type="checkbox" name="" value="" checked>
               <label for="brands_1">Bosch</label>
 
-              <input class="visually-hidden checkbox" id="brands_2" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden checkbox" id="brands_2" type="checkbox" name="" value="">
               <label for="brands_2">Интерскол</label>
 
               <input class="visually-hidden checkbox" id="brands_3" type="checkbox" name="" value="" checked>
               <label for="brands_3">Makita</label>
 
-              <input class="visually-hidden checkbox" id="brands_4" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden checkbox" id="brands_4" type="checkbox" name="" value="">
               <label for="brands_4">Dewalt</label>
 
-              <input class="visually-hidden checkbox" id="brands_5" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden checkbox" id="brands_5" type="checkbox" name="" value="">
               <label for="brands_5">Hitachi</label>
             </fieldset>
 
-            <fieldset class="filer-form__field">
+            <fieldset class="filer-form__field filer-form__field--last">
               <legend class="filer-form__title">Питание:</legend>
 
-              <input class="visually-hidden checkbox" id="supply_1" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden radio" id="supply_1" type="radio" name="supply" value="" checked>
               <label for="supply_1">Аккумуляторные</label>
 
-              <input class="visually-hidden checkbox" id="supply_2" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden radio" id="supply_2" type="radio" name="supply" value="" >
               <label for="supply_2">Сетевые</label>
             </fieldset>
 
@@ -332,9 +336,6 @@
           </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">3</a>
-          </li>
-          <li class="pagination__item">
-            <a href="#" class="pagination__link">4</a>
           </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">следующая</a>
