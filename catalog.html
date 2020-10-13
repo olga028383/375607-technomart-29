@@ -120,7 +120,7 @@
       <aside class="layout__left">
         <section class="filter">
           <h2 class="filter__title">Фильтр:</h2>
-          <form class="filer-form">
+          <form class="filer-form" action="https://echo.htmlacademy.ru/">
             <fieldset class="filer-form__field">
               <legend class="filer-form__title">Цена:</legend>
 
@@ -132,38 +132,38 @@
                 <div class="range-price__item range-price__item--max" tabindex="0" style="left: 74%"></div>
               </div>
 
-              <label class="group-price">
-                <input type="number" class="group-price__input" value="0">
-                <input type="number" class="group-price__input" value="30000">
-              </label>
+              <div class="group-price">
+                <input type="number" class="group-price__input" value="0" min="0">
+                <input type="number" class="group-price__input" value="30000" max="30000">
+              </div>
             </fieldset>
 
             <fieldset class="filer-form__field">
               <legend class="filer-form__title">Производители:</legend>
 
-              <input class="visually-hidden checkbox" id="brands_1" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden checkbox" id="brands_1" type="checkbox" name="brands" value="1" checked>
               <label for="brands_1">Bosch</label>
 
-              <input class="visually-hidden checkbox" id="brands_2" type="checkbox" name="" value="">
+              <input class="visually-hidden checkbox" id="brands_2" type="checkbox" name="brands" value="2">
               <label for="brands_2">Интерскол</label>
 
-              <input class="visually-hidden checkbox" id="brands_3" type="checkbox" name="" value="" checked>
+              <input class="visually-hidden checkbox" id="brands_3" type="checkbox" name="brands" value="3" checked>
               <label for="brands_3">Makita</label>
 
-              <input class="visually-hidden checkbox" id="brands_4" type="checkbox" name="" value="" disabled>
+              <input class="visually-hidden checkbox" id="brands_4" type="checkbox" name="brands" value="4" disabled>
               <label for="brands_4">Dewalt</label>
 
-              <input class="visually-hidden checkbox" id="brands_5" type="checkbox" name="" value="">
+              <input class="visually-hidden checkbox" id="brands_5" type="checkbox" name="brands" value="5">
               <label for="brands_5">Hitachi</label>
             </fieldset>
 
             <fieldset class="filer-form__field filer-form__field--last">
               <legend class="filer-form__title">Питание:</legend>
 
-              <input class="visually-hidden radio" id="supply_1" type="radio" name="supply" value="" checked>
+              <input class="visually-hidden radio" id="supply_1" type="radio" name="supply" value="1" checked>
               <label for="supply_1">Аккумуляторные</label>
 
-              <input class="visually-hidden radio" id="supply_2" type="radio" name="supply" value="">
+              <input class="visually-hidden radio" id="supply_2" type="radio" name="supply" value="2">
               <label for="supply_2">Сетевые</label>
             </fieldset>
 
