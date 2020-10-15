@@ -1380,10 +1380,12 @@ button.button {
   box-sizing: border-box;
 }
 
-.checkbox + label:hover::before {
+.checkbox:hover + label::before {
   border-color: var(--filter-element-color-hover);
 }
-
+.checkbox:focus + label::before{
+  outline: 2px solid var(--basic-black);
+}
 .checkbox:checked + label::before {
   border-color: transparent;
 }
@@ -1420,7 +1422,9 @@ button.button {
 .radio + label:hover::after {
   border-color: var(--filter-element-color-hover);
 }
-
+.radio:focus + label::before{
+  box-shadow: 0 0 0 2px var(--basic-black);
+}
 .radio:disabled + label {
   opacity: .4;
 }
