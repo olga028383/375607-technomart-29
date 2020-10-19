@@ -150,10 +150,13 @@
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -547,14 +550,14 @@ button.button {
   margin-right: 16px;
 }
 
-.personal-menu__item:not(:last-child)::after {
+.personal-menu__item+.personal-menu__item::before {
   content: '';
   position: absolute;
   width: 6px;
   height: 6px;
   background-color: var(--basic-blue);
   border-radius: 50%;
-  left: calc(100% + 13px);
+  left: -17px;
   top: 8px;
 }
 
