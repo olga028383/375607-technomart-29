@@ -550,7 +550,7 @@ button.button {
   margin-right: 16px;
 }
 
-.personal-menu__item+.personal-menu__item::before {
+.personal-menu__item + .personal-menu__item::before {
   content: '';
   position: absolute;
   width: 6px;
@@ -1386,9 +1386,11 @@ button.button {
 .checkbox:hover + label::before {
   border-color: var(--filter-element-color-hover);
 }
-.checkbox:focus + label::before{
+
+.checkbox:focus + label::before {
   outline: 2px solid var(--basic-black);
 }
+
 .checkbox:checked + label::before {
   border-color: transparent;
 }
@@ -1425,9 +1427,11 @@ button.button {
 .radio + label:hover::after {
   border-color: var(--filter-element-color-hover);
 }
-.radio:focus + label::before{
+
+.radio:focus + label::before {
   box-shadow: 0 0 0 2px var(--basic-black);
 }
+
 .radio:disabled + label {
   opacity: .4;
 }
@@ -1868,6 +1872,11 @@ button.button {
 
 .popup--show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.popup--error {
+  animation: shake 0.6s;
 }
 
 .popup--show.popup--cart {
@@ -2043,4 +2052,48 @@ button.button {
 
 .field__notification {
   resize: vertical;
+}
+
+.field-error {
+  border-color: var(--basic-red);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
