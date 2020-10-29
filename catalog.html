@@ -11,8 +11,8 @@
     <header class="header">
       <div class="header__top">
         <div class="container header__top-container">
-          <a class="logo logo--header"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
-          <form action="index.html" class="search">
+          <a href="index.html" class="logo logo--header"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <form action="https://echo.htmlacademy.ru/" class="search">
             <input type="search" name="g" placeholder="Поиск" class="search__input">
             <button type="submit" class="search__icon" aria-label="Отправить">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,9 +137,10 @@
 
               <div class="group-price">
                 <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                <input id="min-price" type="number" class="group-price__input" value="0" min="0">
+                <input id="min-price" type="number" name="min-price" class="group-price__input" value="0" min="0">
                 <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                <input id="max-price" type="number" class="group-price__input" value="30000" max="30000">
+                <input id="max-price" type="number" name="max-price" class="group-price__input" value="30000"
+                       max="30000">
               </div>
             </fieldset>
 
@@ -382,7 +383,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top-line">
-          <a class="logo footer__logo"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <a href="index.html" class="logo footer__logo"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
           <ul class="footer-nav">
             <li class="footer-nav__item"><a href="blank.html" class="footer-nav__link">Компания</a></li>
             <li class="footer-nav__item"><a href="blank.html" class="footer-nav__link">Новости</a></li>
@@ -450,11 +451,13 @@
 
     <section class="popup popup--cart">
       <h2 class="popup-cart__text">Товар добавлен в корзину!</h2>
-      <div class="popup-cart__buttons">
-        <a href="blank.html" class="button">Оформить заказа</a>
-        <a href="catalog.html" class="button button--back">Продолжить покупки</a>
+      <div class="popup__buttons">
+        <a href="blank.html" class="button popup__button">Оформить заказа</a>
+        <a href="catalog.html" class="button button--back popup__button">Продолжить покупки</a>
       </div>
-      <button type="button" class="popup__close" aria-label="Закрыть">Закрыть</button>
+      <button type="button" class="popup__close" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/addCart.js"></script>
   </body>
 </html>
