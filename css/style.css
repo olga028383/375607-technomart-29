@@ -794,7 +794,11 @@ button.button {
 }
 
 .gallery__button:focus {
-  outline: none;
+  outline: none
+}
+
+.gallery__button:focus path {
+  fill: var(--basic-red);
 }
 
 .gallery__button:disabled {
