@@ -2128,7 +2128,7 @@ button.button {
 }
 
 .footer-menu__link {
-  color: var(--color-yellow);
+  color: var(--basic-yellow);
 }
 
 .footer__bottom-line {
@@ -2185,7 +2185,7 @@ button.button {
 .footer-info__link {
   font-family: var(--basic-font-additional);
   display: block;
-  color: var(--color-yellow);
+  color: var(--basic-yellow);
   font-size: 16px;
   line-height: 18px;
 }
