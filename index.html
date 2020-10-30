@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Техномарт</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__top">
         <div class="container header__top-container">
-          <a class="logo logo--header"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <a class="logo logo--header"><img src="img/svg/logo-technomart.svg" width="108" height="18"
+                                            alt="Логотип Техномарт"></a>
           <form action="https://echo.htmlacademy.ru/" class="search">
-            <input type="search" name="g" placeholder="Поиск" class="search__input">
+            <label for="search" class="visually-hidden">Поиск</label>
+            <input type="search" name="g" placeholder="Поиск:" id="search" class="search__input">
             <button type="submit" class="search__icon" aria-label="Отправить">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -355,7 +356,7 @@
             <img src="img/contacts-map.jpg" width="300" height="158"
                  alt="Расположение компании на карте">
           </p>
-          <button type="button" class="button contacts__button">Заблудились? Напишите нам!</button>
+          <a href="form.html" class="button contacts__button">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -363,7 +364,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top-line">
-          <a class="logo footer__logo"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <a class="logo footer__logo"><img src="img/svg/logo-technomart.svg" width="108" height="18"
+                                            alt="Логотип Техномарт"></a>
           <ul class="footer-nav">
             <li class="footer-nav__item"><a href="blank.html" class="footer-nav__link">Компания</a></li>
             <li class="footer-nav__item"><a href="blank.html" class="footer-nav__link">Новости</a></li>
@@ -473,10 +475,6 @@
       <button type="button" class="popup__close" aria-label="Закрыть"></button>
     </section>
 
-    <script src="js/form.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/tabs.js"></script>
-    <script src="js/addCart.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

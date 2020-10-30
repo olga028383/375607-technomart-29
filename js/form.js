@@ -1,4 +1,3 @@
-const formOpenButton = document.querySelector(".contacts__button");
 const formPopup = document.querySelector(".popup--form");
 const popupClose = formPopup.querySelector(".popup__close");
 const form = formPopup.querySelector(".form");
@@ -6,14 +5,18 @@ const fieldName = formPopup.querySelector("input[name='name']");
 const fieldEmail = formPopup.querySelector("input[name='email']");
 const fieldMessage = formPopup.querySelector("textarea[name='notification']");
 
+let formOpenButton = document.querySelector(".contacts__button");
 let isStorageSupport = true;
 let storage = "";
+
+formOpenButton = replaceLink(formOpenButton, 'button');
 
 try {
   storage = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
+
 
 formOpenButton.addEventListener("click", function (evt) {
   evt.preventDefault();
